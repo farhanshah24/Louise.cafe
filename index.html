@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Grandiflora+One&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/logo-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LOUISE - Café</title>
+  </head>
+  <body>
+    <!-- ----------------------Preloader---------------------------->
+     <div id="preloader" class="preloader-overlay">
+      <div class="coffee-bounce">
+        <img src="assets/logo-icon.png" alt="" class="icon">
+      </div>
+    </div>
+    <!-- ----------------------Navbar---------------------------- -->
+    <div id="navbar">
+      <div class="logo">
+        <h1><a href="#home"><img src="assets/logo.png" alt=""></a></h1>
+      </div>
+      <img
+        class="navbar-icon"
+        src="assets/navbar-icon.png"
+        alt="Menu"
+        onclick="toggleNav()"
+      />
+      <div class="sections">
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#timings">Horaires</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- -----------------------Home---------------------------- -->
+    <div id="home">
+      <!-- <div><img src="assets/logo.png" alt=""></div> -->
+      <!-- <p>Un café, une pause, un sourire.</p> -->
+    </div>
+    <!-- ------------------------About-------------------------- -->
+    <div id="about">
+      <div class="about-text">
+        <h1>Bienvenue chez Café Louise</h1>
+        <p>
+          Un lieu où vous trouverez l'alliance parfaite entre confort et
+          sophistication. Notre café est conçu pour être un havre de paix pour
+          les amateurs de café et les gourmands. Que vous recherchiez un endroit
+          chaleureux pour travailler, retrouver des amis ou simplement profiter
+          d'un moment de tranquillité, Café Louise est l'endroit idéal. Savourez
+          notre carte soigneusement élaborée, composée de cafés artisanaux, de
+          pâtisseries artisanales et d'une sélection de plats gastronomiques
+          préparés à partir des meilleurs ingrédients. Nos baristas et chefs
+          passionnés s'engagent à vous offrir qualité et confort dans chaque
+          tasse et chaque assiette. <br />Rejoignez-nous chez Café Louise et
+          découvrez un monde où chaque gorgée et chaque bouchée sont une
+          célébration du goût et du réconfort. Au plaisir de vous accueillir
+          bientôt !
+        </p>
+      </div>
+      <div class="about-image">
+        <div class="front-image"></div>
+        <div class="back-image"></div>
+      </div>
+    </div>
+    <!-- ------------------------Timings----------------------------- -->
+    <div id="timings">
+      <h1 class="timing-title">Horaires d'ouverture</h1>
+      <div class="times">
+        <div class="mon-sat">
+          <h2>lundi - samedi</h2>
+          <h1>7.00 -<br />20.00</h1>
+        </div>
+        <div class="separation"></div>
+        <div class="sun">
+          <h2>dimanche</h2>
+          <h1>Fermé</h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------Menu-------------------------------- -->
+    <div id="menu">
+      <h1 class="menu-title">Menu</h1>
+      <div class="drinks">
+        <div class="items coffee">
+          <h1>Sweet</h1>
+          <ul>
+            <li>
+              <span class="item-name">Croissant</span><span class="dots"></span
+              ><span class="item-price">2.00</span>
+            </li>
+            <li>
+              <span class="item-name">Pain au Chocolat</span><span class="dots"></span
+              ><span class="item-price">2.00</span>
+            </li>
+            <li>
+              <span class="item-name">Macaron (l'unité)</span
+              ><span class="dots"></span><span class="item-price">1.50</span>
+            </li>
+            <li>
+              <span class="item-name">Macaron (x7)</span><span class="dots"></span
+              ><span class="item-price">10.00</span>
+            </li>
+            <li>
+              <span class="item-name">Muffin</span
+              ><span class="dots"></span><span class="item-price">3.00</span>
+            </li>
+            <li>
+              <span class="item-name">Donut</span
+              ><span class="dots"></span><span class="item-price">2.50</span>
+            </li>
+          </ul>
+        </div>
+        <div class="items tea">
+          <h1>Sweet</h1>
+          <ul>
+            <li>
+              <span class="item-name">Homemade Cookie</span><span class="dots"></span
+              ><span class="item-price">3.00</span>
+            </li>
+            <li>
+              <span class="item-name">Tarte du Jour</span><span class="dots"></span
+              ><span class="item-price">4.00</span>
+            </li>
+            <li>
+              <span class="item-name">Tiramisu</span><span class="dots"></span
+              ><span class="item-price">3.50</span>
+            </li>
+            <li>
+              <span class="item-name">Mousse au chocolat</span
+              ><span class="dots"></span><span class="item-price">3.50</span>
+            </li>
+            <li>
+              <span class="item-name">Panna Cotta</span><span class="dots"></span
+              ><span class="item-price">3.50</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="food">
+        <div class="items meal">
+          <h1>Boissons / Drinks</h1>
+          <ul>
+            <li>
+              <span class="item-name">Jus de fruits</span
+              ><span class="dots"></span><span class="item-price">3.90</span>
+            </li>
+            <li>
+              <span class="item-name">Soda</span><span class="dots"></span
+              ><span class="item-price">3.00</span>
+            </li>
+            <li>
+              <span class="item-name">Thé Glacé</span
+              ><span class="dots"></span><span class="item-price">3.00</span>
+            </li>
+            <li>
+              <span class="item-name">Limonade</span
+              ><span class="dots"></span><span class="item-price">4.00</span>
+            </li>
+            <li>
+              <span class="item-name">Diabolo</span
+              ><span class="dots"></span><span class="item-price">4.50</span>
+            </li>
+            <li>
+              <span class="item-name">Jus d'orange pressé</span
+              ><span class="dots"></span><span class="item-price">5.90</span>
+            </li>
+            <li>
+              <span class="item-name">Perrier</span
+              ><span class="dots"></span><span class="item-price">4.50</span>
+            </li>
+            <li>
+              <span class="item-name">San Pellegrino (eau pétillante)</span
+              ><span class="dots"></span><span class="item-price">4.50</span>
+            </li>
+            <li>
+              <span class="item-name">Vittel (eau minérale)</span
+              ><span class="dots"></span><span class="item-price">4.50</span>
+            </li>
+          </ul>
+        </div>
+        <div class="items bread">
+          <h1>Coffee</h1>
+          <ul>
+            <li>
+              <span class="item-name">Espresso</span><span class="dots"></span
+              ><span class="item-price">2.50</span>
+            </li>
+            <li>
+              <span class="item-name">Americano</span><span class="dots"></span
+              ><span class="item-price">3.00</span>
+            </li>
+            <li>
+              <span class="item-name">Latte</span><span class="dots"></span
+              ><span class="item-price">4.50</span>
+            </li>
+            <li>
+              <span class="item-name">Ice Latte with flavour</span><span class="dots"></span
+              ><span class="item-price">5.00</span>
+            </li>
+            <li>
+              <span class="item-name">Cappuccino</span
+              ><span class="dots"></span><span class="item-price">5.00</span>
+            </li>
+            <li>
+              <span class="item-name">Café Viennois</span><span class="dots"></span
+              ><span class="item-price">6.00</span>
+            </li>
+            <li>
+              <span class="item-name">Chocolat Chaud</span><span class="dots"></span
+              ><span class="item-price">4.50</span>
+            </li>
+            <li>
+              <span class="item-name">Thé / Infusion</span><span class="dots"></span
+              ><span class="item-price">4.40</span>
+            </li>
+            <li>
+              <span class="item-name">Café Gourmand</span><span class="dots"></span
+              ><span class="item-price">8.50</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------Gallery------------------------------ -->
+    <div id="gallery">
+      <h1 class="gallery-title">Galerie</h1>
+      <div class="gallery-images">
+        <img
+          class="gallery-image"
+          src="assets/gallery1.jpg"
+          alt="Gallery Image 1"
+        />
+        <img
+          class="gallery-image"
+          src="assets/gallery2.jpg"
+          alt="Gallery Image 2"
+        />
+        <img
+          class="gallery-image"
+          src="assets/gallery3.jpg"
+          alt="Gallery Image 3"
+        />
+        <img
+          class="gallery-image"
+          src="assets/gallery4.jpg"
+          alt="Gallery Image 4"
+        />
+        <img
+          class="gallery-image"
+          src="assets/gallery5.jpg"
+          alt="Gallery Image 5"
+        />
+        <img
+          class="gallery-image"
+          src="assets/gallery6.jpg"
+          alt="Gallery Image 6"
+        />
+        <img
+          class="gallery-image"
+          src="assets/gallery7.jpg"
+          alt="Gallery Image 7"
+        />
+        <img
+          class="gallery-image"
+          src="assets/gallery8.jpg"
+          alt="Gallery Image 8"
+        />
+        <img
+          class="gallery-image"
+          src="assets/gallery9.jpg"
+          alt="Gallery Image 9"
+        />
+        <img
+          class="gallery-image"
+          src="assets/gallery10.jpg"
+          alt="Gallery Image 10"
+        />
+        <img
+          class="gallery-image"
+          src="assets/gallery11.jpg"
+          alt="Gallery Image 11"
+        />
+        <img
+          class="gallery-image"
+          src="assets/gallery12.jpg"
+          alt="Gallery Image 12"
+        />
+      </div>
+    </div>
+    <!-- -----------------------Contact------------------------------ -->
+     <div id="contact">
+      <div class="address">
+        <div class="logo-end">
+        <img src="assets/logo.png" alt="" class="logo-foot">
+      </div>
+        <span
+          ><img
+            class="location-icon"
+            src="assets/location-icon.png"
+            alt="location-icon"
+          />
+          57 Bd de Grenelle,<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75015 Paris, France </span
+        >
+        <a
+          href="https://www.google.com/maps/place/Caf%C3%A9+LOUISE/@48.851169,2.2922885,17z/data=!4m15!1m8!3m7!1s0x47e6719330b35879:0xbc0b2e032fc22c58!2sCaf%C3%A9+LOUISE!8m2!3d48.8511767!4d2.2924403!10e9!16s%2Fg%2F11y4zc1w7g!3m5!1s0x47e6719330b35879:0xbc0b2e032fc22c58!8m2!3d48.8511767!4d2.2924403!16s%2Fg%2F11y4zc1w7g?entry=ttu&g_ep=EgoyMDI1MDYxNi4wIKXMDSoASAFQAw%3D%3D"
+          ><br />Voir sur la carte</a
+        >
+      </div>
+      <div class="contact-us">
+        <h1>Contactez-nous</h1>
+        <p>
+          Pour toute demande de renseignements ou commentaire, n'hésitez pas à nous contacter par e-mail ou par téléphone à l'adresse suivante :
+        </p>
+        <div>
+          <img src="assets/phone-icon.png" alt="phone-icon" />
+          <a href="tel:+33695134656">+33 6 95 13 46 56</a>
+        </div>
+        <div>
+          <img src="assets/mail-icon.png" alt="mail-icon" />
+          <a href="mailto:contact@louisecafe.com">contact@louisecafe.com</a>
+        </div>
+        <div class="instagram-link">
+          <img
+            class="instagram-icon"
+            src="assets/instagram.png"
+            alt="Instagram Icon"
+          />
+          <a href="https://www.instagram.com">Instagram </a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- -----------------------Script------------------------------- -->
+    <script src="script.js"></script>
+  </body>
+</html>
