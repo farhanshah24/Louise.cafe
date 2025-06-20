@@ -39,12 +39,6 @@ function changeBackground() {
     } else {
       homeSection.style.backgroundPosition = "center";
     }
-  } else if (ismobile) {
-    if (images[index] === 'url("assets/home-image-2.jpg")') {
-      homeSection.style.backgroundPosition = "-400px center";
-    } else {
-      homeSection.style.backgroundPosition = "center";
-    }
   } else {
     homeSection.style.backgroundPosition = "center";
   }
